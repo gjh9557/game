@@ -28,8 +28,16 @@ public interface CommonData {
     /**
      * 创建连接超时时间
      */
+    /**
+     * jedis.max.idle=30
+     * jedis.max.total=100
+     * brrow=true
+     * host=hadoop01
+     * ports=6379
+     */
     String MAX_WAIT_MILLIS = "maxWaitMillis";
 
+    String Host="conhost";
     /**
      * 获取连接测试是否可用
      */
@@ -67,6 +75,6 @@ public interface CommonData {
     String SPLIT_FLG2=":";
 
     //_________________________________________
-    String DB_CONN_PROPERTIES="db/dbcp.properties";
+    String DB_CONN_PROPERTIES="dbcp.properties";
     String DB_CONN_EXCEPTION_INFO="数据库连接失败！";
 }
