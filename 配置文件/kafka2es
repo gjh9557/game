@@ -1,0 +1,41 @@
+ input {
+  kafka {
+        client_id => "logstash-1-1"
+        type => "gamelog"
+        auto_offset_reset => "earliest"
+        codec => "plain"
+        group_id => "elas2"
+        topics => "gamelog"
+        bootstrap_servers => "hadoop01:9092"
+  }
+}
+
+# 定制过滤逻辑
+filter {
+  # 下面的过滤逻辑在进行数据的标准化
+  if [type] == "gamelog" {
+        mutate {
+          split => { "message" => "|" }
+          add_field => {
+                "eventType" => "%{message[0]}"
+                "time" => "%{message[1]}"
+                "ip" => "%{message[2]}"
+                "userName" => "%{message[3]}"
+                "role" => "%{message[4]}"
+                "gender" => "%{message[5]}"
+         }
+         remove_field => [ "message" ]
+   }
+  }
+}
+
+output {
+  if [type] == "gamelog" {
+        elasticsearch {
+          index => "gamelog"
+          codec => plain {
+                charset => "UTF-8"
+          }
+          hosts => ["hadoop01:9200"]
+        }
+  }
