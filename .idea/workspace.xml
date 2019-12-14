@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452383ba-d182-42cd-91be-c0767d634815" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ali/dao/iGameAnalysisResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ali/dao/impl/GameAnalysisResultImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ali/entity/GameAnalysisResultBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="178" column="19" lean-forward="true" selection-start-line="178" selection-start-column="19" selection-end-line="178" selection-end-column="19" />
+            <state relative-caret-position="266">
+              <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
               <folding>
                 <element signature="e#25#58#0" expanded="true" />
               </folding>
@@ -33,11 +29,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal2_sql.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../workstore/org/apache/spark/spark-sql_2.11/2.2.3/spark-sql_2.11-2.2.3-sources.jar!/org/apache/spark/sql/Dataset.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="2526" column="77" lean-forward="true" selection-start-line="2526" selection-start-column="77" selection-end-line="2526" selection-end-column="77" />
+            <state relative-caret-position="46987">
+              <caret line="2526" column="77" selection-start-line="2526" selection-start-column="77" selection-end-line="2526" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -45,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/entity/GameAnalysisResultBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
+            <state relative-caret-position="1273">
               <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,24 +94,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/utils/DBCPUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="608">
               <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#794#795#0" expanded="true" />
                 <element signature="e#813#814#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ali/test/testDbutils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/dao/impl/GameAnalysisResultImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="608">
               <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/common/CommonData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            <state relative-caret-position="503">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -145,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="437">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -187,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ali/entity/GameAnalysisResultBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ali/dao/impl/GameAnalysisResultImpl.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal2_sql.scala" />
       </list>
     </option>
   </component>
@@ -198,11 +192,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="218" />
+    <option name="y" value="-3" />
     <option name="width" value="1570" />
-    <option name="height" value="997" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,15 +319,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="D:/项目存储/爬虫java" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ali.offline" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ideamaven\games\src\main\resources" />
     </key>
@@ -352,7 +349,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HotBloodOffineCal">
+  <component name="RunManager" selected="Application.HotBloodOffineCal2_sql">
     <configuration name="HotBloodOffineCal" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ali.offline.HotBloodOffineCal" />
       <module name="games" />
@@ -367,12 +364,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCommonData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ali.test.testCommonData" />
+    <configuration name="HotBloodOffineCal2_sql" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ali.offline.HotBloodOffineCal2_sql" />
       <module name="games" />
+      <option name="PROGRAM_PARAMETERS" value="2018-02-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ali.test.*" />
+          <option name="PATTERN" value="com.ali.offline.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -424,18 +422,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.HotBloodOffineCal" />
-      <item itemvalue="Application.testCommonData" />
       <item itemvalue="Application.testenum" />
       <item itemvalue="Application.testJedis" />
+      <item itemvalue="Application.HotBloodOffineCal2_sql" />
       <item itemvalue="JUnit.testDbutils.testsave" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HotBloodOffineCal2_sql" />
         <item itemvalue="Application.HotBloodOffineCal" />
         <item itemvalue="JUnit.testDbutils.testsave" />
         <item itemvalue="Application.testJedis" />
         <item itemvalue="Application.testenum" />
-        <item itemvalue="Application.testCommonData" />
       </list>
     </recent_temporary>
   </component>
@@ -548,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576151016958</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="项目sparkcore版本完成">
+      <created>1576245095756</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576245095756</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -584,10 +589,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="414" y="-11" width="1256" height="797" extended-state="0" />
+    <frame x="175" y="22" width="1256" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18113522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31385642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,15 +601,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82554257" visible="true" weight="0.39398497" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8222037" visible="true" weight="0.36036035" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49916527" weight="0.2972973" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.17445743" side_tool="true" visible="true" weight="0.39398497" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49865952" weight="0.296034" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.17779633" side_tool="true" visible="true" weight="0.36036035" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.16815476" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.74958265" weight="0.19398496" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7479132" weight="0.1936937" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -620,7 +625,8 @@
     <MESSAGE value="项目轮廓搭建完成,进一步完善" />
     <MESSAGE value="项目搭建完成" />
     <MESSAGE value="项目no.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目no.1" />
+    <MESSAGE value="项目sparkcore版本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目sparkcore版本完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -754,30 +760,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/common/CommonData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/dao/Gamelog.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ali/test/testDbutils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        <state relative-caret-position="152">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="jar://$PROJECT_DIR$/../workstore/org/apache/spark/spark-sql_2.11/2.2.3/spark-sql_2.11-2.2.3.jar!/org/apache/spark/sql/Dataset.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="124">
+          <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/dao/Gamelog.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="266">
+          <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
+          <folding>
+            <element signature="e#25#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../workstore/org/apache/spark/spark-sql_2.11/2.2.3/spark-sql_2.11-2.2.3-sources.jar!/org/apache/spark/sql/Dataset.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46987">
+          <caret line="2526" column="77" selection-start-line="2526" selection-start-column="77" selection-end-line="2526" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/entity/GameAnalysisResultBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
+        <state relative-caret-position="1273">
           <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -819,22 +839,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/utils/DBCPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="608">
           <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#794#795#0" expanded="true" />
             <element signature="e#813#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ali/test/testDbutils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -848,7 +858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/dao/impl/GameAnalysisResultImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="608">
           <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -856,27 +866,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../workstore/org/apache/spark/spark-sql_2.11/2.2.3/spark-sql_2.11-2.2.3.jar!/org/apache/spark/sql/Dataset.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ali/common/CommonData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
+        <state relative-caret-position="503">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../workstore/org/apache/spark/spark-sql_2.11/2.2.3/spark-sql_2.11-2.2.3-sources.jar!/org/apache/spark/sql/Dataset.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="2526" column="77" lean-forward="true" selection-start-line="2526" selection-start-column="77" selection-end-line="2526" selection-end-column="77" />
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ali/offline/HotBloodOffineCal2_sql.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="178" column="19" lean-forward="true" selection-start-line="178" selection-start-column="19" selection-end-line="178" selection-end-column="19" />
-          <folding>
-            <element signature="e#25#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
         </state>
       </provider>
     </entry>
