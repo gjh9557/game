@@ -17,6 +17,7 @@ import scala.collection.mutable.ArrayBuffer
 
 /**
   * sparkcore版本
+  * 在使用spark sql时，最后求指标可以将sql语句何在一起执行速度会快一点，可以作为一个优化点。但是易读性查了很多
   */
 
 object HotBloodOffineCal2_sql {
@@ -226,18 +227,25 @@ getTime(time)<UNIX_TIMESTAMP(DATE_ADD('$baseData',1),'yyyy-MM-dd') * 1000)
       */
 //    val nextActivePretenge=calnextActivePretenge(adduser,sc,castdata,filter,2,1)
     //求出七天的留存率
-spark.sql(
-  s"""
-    |select
-    |count(distinct(t1.userName)) * 1.0/'$newUser'
-    |from
-    |tb_tmp t1,tb_tmp t2
-    |where (t1.userName=t2.userName) and (t1.eventType=1) and (t2.eventType in ('1','2'))
-    |and (getTime(t1.time)>=UNIX_TIMESTAMP('$baseData','yyyy-MM-dd') * 1000 and getTime(t1.time)<UNIX_TIMESTAMP(DATE_ADD('$baseData',1),'yyyy-MM-dd') * 1000)
-    |and (getTime(t2.time)>=UNIX_TIMESTAMP(DATE_ADD('$baseData',1),'yyyy-MM-dd') * 1000 and getTime(t2.time)<UNIX_TIMESTAMP(DATE_ADD('$baseData',2),'yyyy-MM-dd') * 1000)
-    |
-  """.stripMargin).show
+    val stayFinalResult=ArrayBuffer[String]()
+    for(i<- 1 to 7) {
+      val stayperten = spark.sql(
+        s"""
+select
+count(distinct(t1.userName)) * 1.0/'$newUser' `留存率`
+from
+tb_tmp t1,tb_tmp t2
+where (t1.userName=t2.userName) and (t1.eventType=1) and (t2.eventType in ('1','2'))
+and (getTime(t1.time)>=UNIX_TIMESTAMP('$baseData','yyyy-MM-dd') * 1000 and getTime(t1.time)<UNIX_TIMESTAMP(DATE_ADD('$baseData',1),'yyyy-MM-dd') * 1000)
+and (getTime(t2.time)>=UNIX_TIMESTAMP(DATE_ADD('$baseData',$i),'yyyy-MM-dd') * 1000 and getTime(t2.time)<UNIX_TIMESTAMP(DATE_ADD('$baseData',${i + 1}),'yyyy-MM-dd') * 1000)
 
+  """.stripMargin).rdd.first().getAs[Double]("留存率")
+
+      val dayper = f"$stayperten%.4f"
+      stayFinalResult.append(dayper)
+
+    }
+    println(stayFinalResult)
 
 //    save2db(baseData,newusertotal,activeUsertotal,array)
 
